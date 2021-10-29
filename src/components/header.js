@@ -41,16 +41,12 @@ const Header = (title, date, temp) => {
 // Implement this function taking a css selector as its only argument.
 
 const headerAppender = (object) => {
-  const head = document.querySelector('.header-container');
+  let head = document.querySelector('head');
   head.appendChild(Header(object.title, object.date, object.temp));
+  head.classList.add('header-container');
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
   return head
 }
-
-console.log(headerAppender)
-
-
-
 export { Header, headerAppender }
