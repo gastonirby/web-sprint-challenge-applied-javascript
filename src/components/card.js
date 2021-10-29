@@ -18,7 +18,7 @@ const Card = ({headline, authorPhoto, authorName}) => {
   cardV.appendChild(authorV);
   authorV.appendChild(containerV);
   containerV.appendChild(imgV);
-  containerV.appendChild(nameV);
+  authorV.appendChild(nameV);
 
   // set class names
   cardV.classList.add('card');
@@ -29,7 +29,7 @@ const Card = ({headline, authorPhoto, authorName}) => {
   // The text inside elements will be set using their `textContent` property (NOT `innerText`).
   // set text content
   headlineV.textContent = headline;
-  nameV.textContent = authorName;
+  nameV.textContent = `By ${authorName}`;
   imgV.src = authorPhoto;
 
   // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
