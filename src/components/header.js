@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -24,9 +12,9 @@ const Header = (title, date, temp) => {
   // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
 
   //setup heirarchy
-  divV.appendChild('dateV');
-  divV.appendChild('h1V');
-  divV.appendChild('tempV');
+  divV.appendChild(dateV);
+  divV.appendChild(h1V);
+  divV.appendChild(tempV);
 
   //set class names
   divV.classList.add('header');
@@ -53,8 +41,14 @@ const headerAppender = (selector) => {
   // ---------------------
   // Implement this function taking a css selector as its only argument.
   // It should create a header using the Header component above, passing arguments of your choosing.
+  const title = document.querySelector(selector)
+  const head = Header(selector)
+
+  }
+
+
   // It should append the header to the element in the DOM that matches the given selector.
   //
-}
+
 
 export { Header, headerAppender }
