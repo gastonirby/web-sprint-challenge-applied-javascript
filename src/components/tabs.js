@@ -1,4 +1,4 @@
-const topics = [];
+
 
 const Tabs = ({key1, key2, key3}) => {
   // TASK 3
@@ -37,7 +37,6 @@ const Tabs = ({key1, key2, key3}) => {
   //
   return topics
 }
-Tabs('javascript', 'bootsrap', 'technology');
 
 const tabsAppender = (selector) => {
   // TASK 4

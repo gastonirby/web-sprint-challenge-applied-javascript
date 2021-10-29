@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const Card = ({headline, authorPhoto, authorName}) => {
   // TASK 5
   // ---------------------
